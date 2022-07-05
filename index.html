@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shifumi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="img-container">
+        <div class="img-user">
+            <img src="https://cdn.glitch.com/f6a7768a-b9ea-4111-bf29-7d66697755f5%2Fvictory-svgrepo-com.svg?v=1602660588948" class="hand js-hand js-hand-scisor" data-form="scisor">
+            <img src="https://cdn.glitch.com/f6a7768a-b9ea-4111-bf29-7d66697755f5%2Ffist-svgrepo-com.svg?v=1602660590410" class="hand js-hand js-hand-rock" data-form="rock">
+            <img src="https://cdn.glitch.com/f6a7768a-b9ea-4111-bf29-7d66697755f5%2Fhand-catch-svgrepo-com.svg?v=1602660591851" class="hand js-hand js-hand-paper" data-form="paper">
+        </div>
+        <div class="img-computer">
+            <img src="https://cdn.glitch.com/f6a7768a-b9ea-4111-bf29-7d66697755f5%2Fvictory-svgrepo-com.svg?v=1602660588948" class="hand js-hand-computer" data-form="scisor">
+            <img src="https://cdn.glitch.com/f6a7768a-b9ea-4111-bf29-7d66697755f5%2Ffist-svgrepo-com.svg?v=1602660590410" class="hand js-hand-computer" data-form="rock">
+            <img src="https://cdn.glitch.com/f6a7768a-b9ea-4111-bf29-7d66697755f5%2Fhand-catch-svgrepo-com.svg?v=1602660591851" class="hand js-hand-computer" data-form="paper">
+        </div>
+    </div>
+    <div class="choice-text js-choice-text">
+        <p class="description js-my-choice"></p>
+        <p class="description js-his-choice"></p>
+    </div>
+    <div class="result-container">
+        <p>Joueur: <span class="my-score"></span> Ordinateur: <span class="computer-score"></span></p>
+        <p>Eglité: <span class="js-equal"></span></p>
+        <p class="description js-result"></p>
+
+    </div>
+    <div class="final-container">
+        <p class="final-result"></p>
+    </div>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

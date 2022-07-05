@@ -1,0 +1,37 @@
+.hand {
+    width: 72px;
+    transition: 300ms;
+    margin-top: 10rem;
+}
+
+.hand--opacity {
+    opacity: 0.23;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.final-result {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+}
+
+.final-container {
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-container {
+    text-align: center;
+}
