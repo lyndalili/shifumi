@@ -46,7 +46,7 @@ function duel(event) {
     } else if ((myTarget.getAttribute("data-form") === "scisor" && hisTarget.getAttribute("data-form") === "paper") || (myTarget.getAttribute("data-form") === "paper" && hisTarget.getAttribute("data-form") === "rock") || (myTarget.getAttribute("data-form") === "rock" && hisTarget.getAttribute("data-form") === "scisor")) {
         myScore.textContent++;
         ourResult.textContent = "Tu as gagné !"
-        if (myScore.textContent === "3") {
+        if (myScore.textContent === "5") {
             confetti.start();
             setTimeout(function() { confetti.stop() }, 10000)
             allResult.textContent = ""
@@ -57,7 +57,7 @@ function duel(event) {
     } else {
         hisScore.textContent++;
         ourResult.textContent = "Tu as perdus."
-        if (hisScore.textContent === "3") {
+        if (hisScore.textContent === "5") {
             allResult.textContent = ""
             finalResult.textContent = "VOUS AVEZ PERDU"
 
@@ -80,6 +80,7 @@ function duel(event) {
 
 
 }
+
 
 for (let element of hand) {
     element.addEventListener("click", duel)
